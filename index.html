@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Detourer</title>
+
+    <link rel="stylesheet" type="text/css" href="./stylesheets/detourer.css">
+    <script
+      src="https://maps.googleapis.com/maps/api/js?libraries=places">
+    </script>
+  </head>
+  <body>
+    <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Start typing here">
+    </input>
+    <div id="map"></div>
+
+    <script>
+      var map;
+      (function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 37.7833, lng: -122.4167},
+          zoom: 13
+        });
+
+        var trafficLayer = new google.maps.TrafficLayer();
+        trafficLayer.setMap(map);
+
+        var searchBounds = new google.maps.LatLngBounds(
+          new google.maps.LatLng(37.6228, -122.4856),
+          new google.maps.LatLng(37.9064, -122.0650)
+        );
+        var options = {
+          bounds: searchBounds
+        }
+        var input = document.getElementById("pac-input");
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        var autocomplete = new google.maps.places.Autocomplete(input, options)
+      })();
+    </script>
+  </body>
+</html>
