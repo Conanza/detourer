@@ -173,3 +173,8 @@ hr {
 	margin-top: -1px;
 	border-top: 1px solid black;
 }
+
+.detour-stats * {
+	width: 90%;
+	margin-left: 5px;
+}
