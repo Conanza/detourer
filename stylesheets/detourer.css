@@ -169,7 +169,7 @@ hr {
 	color: white;
 }
 
-#detour-B-stats {
+.detour-stats:last-of-type {
 	margin-top: -1px;
 	border-top: 1px solid black;
 }

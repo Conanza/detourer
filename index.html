@@ -10,14 +10,22 @@
     </script>
   </head>
   <body>
+    <!-- a modal for the detour routes -->
     <div class="modal-background"></div>
     <div class="detour-modal">
       <div id="detour-A-map" class="detour-map"></div>
-      <div id="detour-A-stats" class="detour-stats">A STATS</div>
+      <div class="detour-stats">
+        <h3>Driver A's Detour</h3>
+        <div id="detour-A-stats"></div>
+      </div>
       <div id="detour-B-map" class="detour-map"></div>
-      <div id="detour-B-stats" class="detour-stats">B STATS</div>
+      <div class="detour-stats">
+        <h3>Driver B's Detour</h3>
+        <div id="detour-B-stats"></div>
+      </div>
     </div>
 
+    <!-- sidebar for origin and destination inputs -->
     <sidebar class="input-sidebar">
       <h1>Detourer</h1>
       <hr>
@@ -54,6 +62,7 @@
       <a href="javascript:void(0)">See who'd have the shorter detour</a>
     </sidebar>
 
+    <!-- original routes -->
     <section class="map-container">
       <div id="driver-A-map" class="map"></div>
       <div id="driver-B-map" class="map"></div>
@@ -64,6 +73,7 @@
     <script src="vendor/jquery-2.1.4.min.js"></script>
     <script src="lib/searchField.js"></script>
     <script src="lib/map.js"></script>
+    <script src="lib/detourStats.js"></script>
     <script src="lib/detourer.js"></script>
   </body>
 </html>
