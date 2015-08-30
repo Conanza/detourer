@@ -143,9 +143,11 @@ hr {
 	top: 50%;
   z-index: 15;
   position: absolute;
-  transform: translate(-50%, -50%);
 	box-shadow: 0px 0px 1px 1px #440D2D;
 	overflow: hidden;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
 }
 
 .detour-map {
