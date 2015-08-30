@@ -149,6 +149,7 @@ hr {
 }
 
 .detour-map {
+	float: left;
 	height: 50%;
 	width: 80%;
 	border-right: 1px solid black;
@@ -156,6 +157,19 @@ hr {
 }
 
 #detour-B-map {
+	margin-top: -1px;
+	border-top: 1px solid black;
+}
+
+.detour-stats {
+	float: left;
+	width: 20%;
+	height: 50%;
+	background-color: #333D47;
+	color: white;
+}
+
+#detour-B-stats {
 	margin-top: -1px;
 	border-top: 1px solid black;
 }
