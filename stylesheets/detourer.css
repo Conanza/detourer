@@ -52,7 +52,7 @@ html, body {
 	font-family: 'Gotham SSm A','Gotham SSm B',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-p {
+p, a {
 	color: #c30975;
 }
 
@@ -104,4 +104,36 @@ hr {
 	width: 50%;
 	height: 50%;
 	overflow: auto;
+}
+
+.modal-background {
+	display: none;
+}
+
+.modal-background.active {
+	display: block;
+	background-color: #c30975;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	opacity: 0.5;
+}
+
+.detour-modal {
+	display: none;
+}
+
+.detour-modal.active {
+	display: block;
+  background-color: white;
+  opacity: 1;
+  width: 85%;
+  height: 85%;
+  left: 50%;
+	top: 50%;
+  z-index: 15;
+  position: absolute;
+  transform: translate(-50%, -50%);
+	box-shadow: 0px 0px 1px 1px #440D2D;
 }
