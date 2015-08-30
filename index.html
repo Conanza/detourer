@@ -46,44 +46,6 @@
     <script src="vendor/jquery-2.1.4.min.js"></script>
     <script src="lib/searchField.js"></script>
     <script src="lib/map.js"></script>
-    <script>
-      $(document).ready(function() {
-        var searchBounds = new google.maps.LatLngBounds(
-          new google.maps.LatLng(37.6228, -122.4856),
-          new google.maps.LatLng(37.9064, -122.0650)
-        );
-        var options = {
-          bounds: searchBounds
-        };
-        var aOrigin = new Detourer.SearchField({
-          inputEl: document.getElementById("driver-A-origin"),
-          searchBoundOptions: options,
-        }).init();
-        var aDestination = new Detourer.SearchField({
-          inputEl: document.getElementById("driver-A-destination"),
-          searchBoundOptions: options,
-        }).init();
-        var bOrigin = new Detourer.SearchField({
-          inputEl: document.getElementById("driver-B-origin"),
-          searchBoundOptions: options,
-        }).init();
-        var bDestination = new Detourer.SearchField({
-          inputEl: document.getElementById("driver-B-destination"),
-          searchBoundOptions: options,
-        }).init();
-
-
-        var mapA = new Detourer.Map({
-          mapEl: document.getElementById("driver-A-map"),
-          originField: aOrigin,
-          destField: aDestination
-        }).init();
-        var mapB = new Detourer.Map({
-          mapEl: document.getElementById("driver-B-map"),
-          originField: bOrigin,
-          destField: bDestination
-        }).init();
-      });
-    </script>
+    <script src="lib/detourer.js"></script>
   </body>
 </html>
