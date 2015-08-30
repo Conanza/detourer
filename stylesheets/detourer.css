@@ -178,3 +178,19 @@ hr {
 	width: 90%;
 	margin-left: 5px;
 }
+
+/*animation*/
+
+@keyframes flash {
+	0% {color: white;}
+	25% {color: #c30975;}
+	50% {color: white;}
+	75% {color: #c30975;}
+	100% {color: white;}
+}
+
+.input-sidebar a {
+	animation-name: flash;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+}
