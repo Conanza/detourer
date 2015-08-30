@@ -61,6 +61,8 @@ hr {
 	opacity: 0.2;
 }
 
+/*sidebar*/
+
 .input-sidebar {
 	color: white;
 	display: block;
@@ -75,6 +77,8 @@ hr {
 	width: 90%;
 	margin-left: 5px;
 }
+
+/*maps section*/
 
 .map-container {
 	float: left;
@@ -93,10 +97,13 @@ hr {
 	height: 50%;
 	width: 50%;
 	float: left;
+	border-bottom: 1px solid black;
+	margin-top: -1px;
 }
 
-.map:first-of-type {
-	border-right: 0px;
+#driver-B-map {
+	margin-left: -1px;
+	border-left: 1px solid black;
 }
 
 .directions {
@@ -105,6 +112,8 @@ hr {
 	height: 50%;
 	overflow: auto;
 }
+
+/*modal and detour maps*/
 
 .modal-background {
 	display: none;
@@ -136,4 +145,17 @@ hr {
   position: absolute;
   transform: translate(-50%, -50%);
 	box-shadow: 0px 0px 1px 1px #440D2D;
+	overflow: hidden;
+}
+
+.detour-map {
+	height: 50%;
+	width: 80%;
+	border-right: 1px solid black;
+	margin-left: -1px;
+}
+
+#detour-B-map {
+	margin-top: -1px;
+	border-top: 1px solid black;
 }
