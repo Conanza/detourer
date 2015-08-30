@@ -61,36 +61,32 @@ html, body {
 	background-color: #333D47;
 }
 
-/*.input-sidebar:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-}*/
-
-#map-container {
+.map-container {
 	float: left;
-	height: 50%;
+	height: 100%;
 	width: 75%;
 }
 
-#map-container:after {
+.map-container:after {
   content: "";
   display: block;
   clear: both;
 	visibility: hidden;
 }
 
-#driver-A-map {
-	height: 100%;
+.map {
+	height: 50%;
 	width: 50%;
 	float: left;
 }
 
-#driver-B-map {
-	height: 100%;
-	width: 50%;
+.map:first-of-type {
+	border-right: 0px;
+}
+
+.directions {
 	float: left;
+	width: 50%;
+	height: 50%;
+	overflow: auto;
 }
